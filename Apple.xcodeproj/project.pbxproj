@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		922B3EB32D65C10F008B60BD /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 922B3EB22D65C10F008B60BD /* Fakery */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		922B3E7F2D646F13008B60BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922B3EB32D65C10F008B60BD /* Fakery in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Apple;
 			packageProductDependencies = (
+				922B3EB22D65C10F008B60BD /* Fakery */,
 			);
 			productName = Apple;
 			productReference = 922B3E6D2D646F10008B60BD /* Apple.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 922B3E642D646F10008B60BD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				922B3EB12D65C10F008B60BD /* XCRemoteSwiftPackageReference "Fakery" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 922B3E6E2D646F10008B60BD /* Products */;
 			projectDirPath = "";
@@ -414,10 +423,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ben.handiclapped.Apple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
@@ -453,10 +463,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ben.handiclapped.Apple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
@@ -591,6 +602,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		922B3EB12D65C10F008B60BD /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		922B3EB22D65C10F008B60BD /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 922B3EB12D65C10F008B60BD /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 922B3E652D646F10008B60BD /* Project object */;
 }
